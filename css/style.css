@@ -71,7 +71,7 @@ body {
 .navbar-images {
   position: absolute;
   right: 60px;
-  top: 10px;
+  top: -1px;
   width: 10rem;
   height: 10rem;
 }
@@ -150,7 +150,7 @@ body {
 .XII,
 .GRADUATION,
 .YEARBOOK {
-  padding: 8rem 7% 1.4rem;
+  padding: 6rem 7% 1.4rem;
 }
 .X h2,
 .XI h2,
@@ -164,7 +164,7 @@ body {
 }
 
 .slide-container {
-  max-width: 700px;
+  max-width: 770px;
   position: relative;
   margin: auto;
   border-radius: 10px;
@@ -268,7 +268,6 @@ footer .credit span {
     font-size: 75%;
   }
 }
-
 /*Tablet*/
 @media (max-width: 768px) {
   html {
@@ -308,6 +307,9 @@ footer .credit span {
   .navbar-images {
     display: block;
   }
+  .navbar-images{
+    right: 74px;
+  }
 
   .hero::after {
     margin-bottom: -2%;
@@ -322,17 +324,15 @@ footer .credit span {
     text-align: center;
     position: relative;
   }
-
   .X h2,
   .XI h2,
   .XII h2,
   .GRADUATION h2,
   .YEARBOOK h2 {
     position: absolute;
-    top: 30%; /* Atur jarak dari atas */
-    left: 50%;
-    transform: translateX(-50%);
+    top: 20%;
   }
+
   .X,
   .XI,
   .XII,
@@ -347,14 +347,47 @@ footer .credit span {
   html {
     font-size: 55%;
   }
+  section {
+    height: 100vh; /* Tingginya selalu sebesar layar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
   .X h2,
   .XI h2,
   .XII h2,
   .GRADUATION h2,
   .YEARBOOK h2 {
     position: absolute;
-    top: 34%; /* Atur jarak dari atas */
-    left: 50%;
-    transform: translateX(-50%);
+    top: 36%;
+  }
+
+  .X,
+  .XI,
+  .XII,
+  .GRADUATION,
+  .YEARBOOK {
+    padding: 8rem 7% 1.4rem;
+  }
+}
+
+@media (max-width: 950px) {
+  html {
+    font-size: 55%;
+  }
+  .slide-container {
+    max-width: 570px;
+  }
+  .X,
+  .XI,
+  .XII,
+  .GRADUATION,
+  .YEARBOOK {
+    padding: 6rem 7% 1.1rem;
+  }
+  .navbar-images {
+    top: 0;
   }
 }
