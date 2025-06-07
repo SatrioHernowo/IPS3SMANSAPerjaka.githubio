@@ -170,6 +170,12 @@ body {
   border-radius: 10px;
 }
 
+.slide-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
 /* Next & previous buttons */
 .prev,
 .next {
@@ -263,15 +269,15 @@ footer .credit span {
 
 /*media queris*/
 /*laptop*/
-@media (max-width: 1366px) {
+@media only screen and (max-width: 1366px) {
   html {
     font-size: 75%;
   }
 }
 /*Tablet*/
-@media (max-width: 768px) {
+@media only screen and (max-width: 940px) {
   html {
-    font-size: 62.5%;
+    font-size: 64%;
   }
 
   #hamburger-menu {
@@ -307,7 +313,7 @@ footer .credit span {
   .navbar-images {
     display: block;
   }
-  .navbar-images{
+  .navbar-images {
     right: 74px;
   }
 
@@ -317,7 +323,7 @@ footer .credit span {
   }
 
   section {
-    height: 100vh; /* Tingginya selalu sebesar layar */
+    min-height: 100vh; /* Tingginya selalu sebesar layar */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -330,7 +336,7 @@ footer .credit span {
   .GRADUATION h2,
   .YEARBOOK h2 {
     position: absolute;
-    top: 20%;
+    top: 30%;
   }
 
   .X,
@@ -343,12 +349,12 @@ footer .credit span {
 }
 
 /*HP*/
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   html {
     font-size: 55%;
   }
   section {
-    height: 100vh; /* Tingginya selalu sebesar layar */
+    min-height: 100vh; /* Tingginya selalu sebesar layar */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -373,12 +379,12 @@ footer .credit span {
   }
 }
 
-@media (max-width: 950px) {
+@media only screen and (max-width: 940px) {
   html {
     font-size: 55%;
   }
   .slide-container {
-    max-width: 570px;
+    max-width: 480px;
   }
   .X,
   .XI,

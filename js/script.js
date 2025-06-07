@@ -58,3 +58,9 @@ document.addEventListener("DOMContentLoaded", () => {
   showSlides(1, "graduate");
   showSlides(1, "yb");
 });
+
+document.querySelectorAll(".navbar-nav a").forEach((link) => {
+  link.addEventListener("click", () => {
+    navbarNav.classList.remove("active");
+  });
+});
