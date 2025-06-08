@@ -168,6 +168,7 @@ body {
   position: relative;
   margin: auto;
   border-radius: 10px;
+  z-index: 1; /* pastikan lebih rendah dari h2 */
 }
 
 .slide-img img {
@@ -331,13 +332,19 @@ footer .credit span {
     position: relative;
   }
   .X h2,
-  .XI h2,
-  .XII h2,
-  .GRADUATION h2,
-  .YEARBOOK h2 {
-    position: absolute;
-    top: 30%;
-  }
+.XI h2,
+.XII h2,
+.GRADUATION h2,
+.YEARBOOK h2 {
+  position: absolute;
+  top: 10%; /* disesuaikan agar lebih atas */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  background: rgba(2, 1, 22, 0.6); /* semi-transparan agar terbaca */
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
 
   .X,
   .XI,
@@ -361,14 +368,20 @@ footer .credit span {
     text-align: center;
     position: relative;
   }
-  .X h2,
-  .XI h2,
-  .XII h2,
-  .GRADUATION h2,
-  .YEARBOOK h2 {
-    position: absolute;
-    top: 36%;
-  }
+.X h2,
+.XI h2,
+.XII h2,
+.GRADUATION h2,
+.YEARBOOK h2 {
+  position: absolute;
+  top: 10%; /* disesuaikan agar lebih atas */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  background: rgba(2, 1, 22, 0.6); /* semi-transparan agar terbaca */
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
 
   .X,
   .XI,
@@ -395,5 +408,16 @@ footer .credit span {
   }
   .navbar-images {
     top: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .X h2,
+  .XI h2,
+  .XII h2,
+  .GRADUATION h2,
+  .YEARBOOK h2 {
+    font-size: 2rem;
+    top: 6%;
   }
 }
